@@ -1,11 +1,17 @@
 #!/usr/bin/env bash
 
-function hello () {
-echo "Hello $1"; }
+hello () {
+    echo "Hello $1"; 
+}
 
-hello "Alex"
-hello "Markus"
-hello "Martin"
-hello "Moni"
+for item in "Alex" "Markus" "Martin"
+    do
+        hello $item
+    done
 
+#hello "Alex"
+#hello "Markus"
+#hello "Martin"
+#hello "Moni"
 
+# https://linuxize.com/post/bash-functions/
