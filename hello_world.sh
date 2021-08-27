@@ -9,6 +9,15 @@ for item in "Alex" "Markus" "Martin"
         hello $item
     done
 
+for ((i=0; i <=2; i++));
+do
+    m=$((i+5))
+    # hello $i
+    echo -n §m:     # -n unterbindet den Zeilenumbruch bei echo
+    hello $m
+done
+
+
 #hello "Alex"
 #hello "Markus"
 #hello "Martin"
